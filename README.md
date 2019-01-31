@@ -4,11 +4,11 @@ It contains front-end , back-end and api
 # test my git branch
 
 - assets // 静态资源
-    -imgs
+    - imgs
         + css.png // CSS文章背景图
         + ...
 - common // 存放公共组件
-    -SVG // 存放VUE图标组件
+    - SVG // 存放VUE图标组件
         + SVGAdd.vue // "添加到"按钮
         + SVGBack.vue // "返回"按钮
         + ...
@@ -16,7 +16,7 @@ It contains front-end , back-end and api
     + BaseAvatar.vue // 头像组件
     + ...
 - components // 存放功能组件
-    -Post // 文章组件
+    - Post // 文章组件
         + module.js //文章状态管理
         + Post.vue // 文章显示组件
         + PostContent.vue // 文章目录组件
