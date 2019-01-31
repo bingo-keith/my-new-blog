@@ -1,25 +1,35 @@
 <template>
   <header :class="$style.header">
     <div :class="$style.logoBox">
+      <SVGLogo height="24" width="24"/>
       <h1 :class="$style.title">科瑞兹曼</h1>
     </div>
-    <BaseAvatar>
-      我是是1
+    <BaseAvatar :style="{transform: `rotate($(beta)deg)`}">
+      {{ user ? user.username : '我' }}
     </BaseAvatar>
+    <!-- <UserMenuList v-if="doShowMenuList" /> -->
   </header>
 </template>
 
 <script>
+import SVGLogo from '@/common/SVG/SVGLogo';
 import BaseAvatar from '@/common/BaseAvatar';
+import UserMenuList from '@/components/User/UserMenuList';
+
 
 export default {
   components: {
-    BaseAvatar
+    SVGLogo,
+    BaseAvatar,
+    UserMenuList
   },
   data () {
     return {
       beta: '',
-      doShowMenuList: false
+      doShowMenuList: true,
+      user: {
+        username: 'keith'
+      }
     };
   },
   methods: {

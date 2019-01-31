@@ -1,6 +1,9 @@
 <template>
   <div id="root" :class="$style.wrap">
     <TheHeader :class="$style.header"/>
+    <main :class="$style.main">
+      test
+    </main>
   </div>
 </template>
 
